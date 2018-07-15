@@ -1,0 +1,68 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #444;
+	height: 100vh;
+	margin: 0;
+	font-size: 14px;
+}
+p {
+	white-space: pre;
+}
+
+.horizontal-layout {
+	display: flex;
+	flex-direction: row;
+}
+.vertical-layout {
+	display: flex;
+	flex-direction: column;
+}
+.end-justified {
+	justify-content: flex-end;
+}
+.center {
+	align-items: center;
+}
+.flex{
+	flex: 1;
+}
+.flex-2{
+	flex: 2;
+}
+.fullwidth {
+	width: 100%;
+}
+.v-scroll{
+	overflow-y: scroll;
+}
+.padding-15 {
+	padding: 15px;
+}
+button {
+	height: 25px;
+    width: 95px;
+    border-radius: 4px;
+    border: 1px #444;
+    box-shadow: 1px 1px 1px 1px #4444448c;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+    color: #eee;
+}
+button.normal {
+	background-color: #ffffff;
+    color: #444;
+}
+button.action {
+	background-color: #424242;
+}
+textarea {
+	background: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    resize: none;
+}
+.bold-text {
+	font-weight: bold;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title of the document</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="simc-help.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body class="fullwidth vertical-layout">
+	<div id="top-menu" class="horizontal-layout center">
+		<div id="back-to-main" class="horizontal-layout flex center" onclick="navigate(this.id)">
+			<i class="fas fa-kiwi-bird" id="bird-icon"></i>
+			Moonkin!
+		</div>
+		<div class="horizontal-layout center">
+			<i id="about" class="about-icon fas fa-child" title="About" onclick="navigate(this.id)"></i>
+		</div>
+	</div>
+	<div class="horizontal-layout flex">
+		<div id="left-menu">
+			<div id="powerbi-mitem" class="menu-item horizontal-layout center" onclick="navigate(this.id)">
+				<i class="fas fa-chart-bar"></i>
+				<span>Power-bi</span>
+			</div>
+			<div id="simc-mitem" class="menu-item horizontal-layout center" onclick="navigate(this.id)">
+				<i class="fas fa-chart-bar"></i>
+				<span>Simc tools</span>
+			</div>
+		</div>
+
+		<!--***********Main page, index***********-->
+		<div id="main" class="page flex vertical-layout padding-15 visible">
+			Hallo
+		</div>
+
+		<!--***********Power-bi-stuff***********-->
+		<div id="powerbi" class="page flex vertical-layout padding-15">
+			<iframe class="flex" src="https://app.powerbi.com/view?r=eyJrIjoiZTQyNWFhNzQtZTEyMS00YzYxLWFmYWUtZTdjMzVmMTQyNzBlIiwidCI6IjBlNWJmM2NmLTFmZjQtNDZiNy05MTc2LTUyYzUzOGMyMmE0ZCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+		</div>
+
+		<!--***********Simc-tools***********-->
+		<div id="simc" class="page flex vertical-layout padding-15">			
+			<div class="horizontal-layout flex">
+				<div class="vertical-layout flex">
+					<span class="bold-text">Talents</span>
+					<div class="horizontal-layout flex">
+						<div class="flex vertical-layout">
+							<span>Tier 15</span>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="None15" name="None15">
+								<label for="None15">None</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="FoN" name="FoN">
+								<label for="FoN">FoN</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="WoE" name="WoE">
+								<label for="WoE">WoE</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="SL" name="SL">
+								<label for="SL">SL</label>
+							</div>
+						</div>
+						<div class="flex vertical-layout">
+							<span>Tier 75</span>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="None75" name="None75">
+								<label for="None75">None</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="SotF" name="SotF">
+								<label for="SotF">SotF</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="Inc" name="Inc">
+								<label for="Inc">Inc</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="StFl" name="StFl">
+								<label for="StFl">StFl</label>
+							</div>
+						</div>
+						<div class="flex vertical-layout">
+							<span>Tier 90</span>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="None90" name="None90">
+								<label for="None90">None</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="ShSt" name="ShSt">
+								<label for="ShSt">ShSt</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="AC" name="AC">
+								<label for="AC">AC</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="BotA" name="BotA">
+								<label for="BotA">BotA</label>
+							</div>
+						</div>
+						<div class="flex vertical-layout">
+							<span>Tier 100</span>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="None100" name="None100">
+								<label for="None100">None</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="FoE" name="FoE">
+								<label for="FoE">FoE</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="SD" name="SD">
+								<label for="SD">SD</label>
+							</div>
+							<div class="horizontal-layout">
+								<input type="checkbox" id="NB" name="NB">
+								<label for="NB">NB</label>
+							</div>
+						</div>						
+					</div>
+					<span class="bold-text">Azerite</span>
+					<div class="horizontal-layout flex">
+					</div>
+					<div class="horizontal-layout end-justified padding-15">
+						<button class="action" onclick="getSimc()">Generate</button>
+						<button class="normal" onclick="copyText('talents-text')">Copy text</button>
+					</div>
+				</div>
+				<textarea class="flex-2" id="talents-text" readonly></textarea>
+			</div>
+			<div class="horizontal-layout flex-2">
+				<div class="vertical-layout flex">
+					<div class="vertical-layout flex">
+						<span class="bold-text">Fight parameters</span>
+						<div class="vertical-layout">
+							<div class="horizontal-layout center">
+								<i class="fa"></i>
+								<select>
+									<option value="adds">adds</option>
+									<option value="damage">damage</option>
+									<option value="movement">movement</option>
+								</select>
+								<i class="fas fa-plus"></i>
+							</div>
+							<div class="horizontal-layout">
+								<i class="fas fa-trash"></i>
+							</div>
+						</div>
+					</div>
+					<div class="horizontal-layout end-justified padding-15 v-scroll">
+						<button class="action" onclick="getSimc()">Generate</button>
+						<button class="normal" onclick="copyText('events-text')">Copy text</button>
+					</div>
+				</div>
+				<textarea class="flex-2" id="events-text" readonly></textarea>
+			</div>
+		</div>
+
+		<!--***********About***********-->
+		<div id="about" class="page flex vertical-layout padding-15">
+			We are so cool
+		</div>
+
+	</div>
+</body>
+</html>

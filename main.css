@@ -1,0 +1,42 @@
+#top-menu {
+	height: 40px;
+	background-color: #444;
+	color: #eee;
+}
+#left-menu {
+	width: 150px;
+	background-color: #444;
+	color: #eee;
+}
+#bird-icon {
+	font-size: 36px;
+    margin: 5px;
+}
+.about-icon#about {
+	font-size: 21px;
+    margin: 0 11px;
+    cursor: pointer;
+}
+#back-to-main {
+	cursor: pointer;
+}
+.menu-item {
+    height: 55px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.menu-item:hover, .menu-item.selected {
+    background-color: #212121;
+    color: #fff;
+}
+
+.menu-item i {
+    margin: 0 8px;
+}
+
+.page {
+	display: none;
+}
+.page.visible {
+	display: inherit;
+}
