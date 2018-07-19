@@ -47,7 +47,7 @@ function getSimc() {
 
 	var text = "";
 	for (var i = 0; i < combination.length; i++) {
-		text = text + "copy=" + combination[i].name + ",base \ntalents=https://worldofwarcraft.com/en-us/game/talent-calculator#druid/balance/talents=" + combination[i].talents + "\n";
+		text = text + "copy=" + combination[i].name + ",base \ntalents=" + combination[i].talents + "\n";
 	}
 	if (!text) text = "Please, select at least one talent for each tier.";
 	$("#talents-text").val(text);

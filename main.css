@@ -51,3 +51,8 @@
     bottom: 15px;
     background-color: #fff;
 }
+#about{
+	    background-image: url(about.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
