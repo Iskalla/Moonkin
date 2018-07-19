@@ -1,30 +1,30 @@
 function getSimc() {
 	var tier15 = {
 		0: "None15",
-		1: "FoN",
+		1: "NB",
 		2: "WoE",
-		3: "SL"
+		3: "FoN"
 	}
 
 	var tier75 = {
 		0: "None75",
 		1: "SotF",
-		2: "Inc",
-		3: "StFl"
+		2: "SL",
+		3: "Inc"
 	}
 
 	var tier90 = {
 		0: "None90",
-		1: "ShSt",
-		2: "AC",
-		3: "BotA"
+		1: "SD",
+		2: "TM",
+		3: "StFl"
 	}
 
 	var tier100 = {
 		0: "None100",
-		1: "FoE",
-		2: "SD",
-		3: "NB"
+		1: "StSt",
+		2: "FoE",
+		3: "NM"
 	}
 
 	var combination = [];

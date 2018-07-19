@@ -40,3 +40,14 @@
 .page.visible {
 	display: inherit;
 }
+
+#powerbi {
+	position: relative;
+}
+#powerbi-hider {
+	width: 98.3%;
+    height: 37px;
+    position: absolute;
+    bottom: 15px;
+    background-color: #fff;
+}
