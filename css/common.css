@@ -68,6 +68,9 @@ p {
 .fullwidth {
 	width: 100%;
 }
+.overflow-hidden {
+	overflow: hidden;
+}
 .v-scroll{
 	overflow-y: scroll;
 }
