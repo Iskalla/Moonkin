@@ -68,6 +68,11 @@
 .maincontainer-nopowerbi {
     padding: 44px 120px;
 }
+.wip {
+    font-size: 50px;
+    color: rgb(255, 0, 26);
+    transform: rotate(-45deg);
+}
 
 /*Main page*/
 #main .pagetitle {
