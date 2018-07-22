@@ -1,9 +1,35 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzJ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hp1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #444;
 	height: 100vh;
 	margin: 0;
 	font-size: 14px;
+	background-color: #eaeaea;
 }
 p {
 	white-space: pre;
@@ -19,6 +45,9 @@ p {
 }
 .end-justified {
 	justify-content: flex-end;
+}
+.center-justified {
+	justify-content: center;
 }
 .center {
 	align-items: center;
@@ -58,11 +87,59 @@ button.action {
 }
 textarea {
 	background: #fff;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
     resize: none;
 }
 .bold-text {
 	font-weight: bold;
+}
+
+input[type='checkbox'] {
+	opacity: 0;
+	cursor: pointer;
+	position: absolute;
+	margin: 0;
+}
+input[type='checkbox']:hover+.checkmark {
+	border-color: #666666;
+}
+.checkmark {
+	display: inline-block;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #c3c3c3;
+    box-shadow: inset 0 0 2px #b5b5b5;
+    cursor: pointer;
+}
+.checkmark:hover {
+	border-color: #666666;
+}
+input[type='checkbox']:checked+.checkmark {
+	background-color: #212121;
+	border-color: #212121;
+	box-shadow: none;
+}
+label {
+	margin-left: 5px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.balance-title {
+    background-color: #ff7d0a;
+    height: 25px;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.subtitle {
+	font-size: 16px;
+    margin-bottom: 5px;
+}
+.top-15 {
+	margin-top: 15px;
+}
+.margin-15 {
+	margin: 15px;
 }

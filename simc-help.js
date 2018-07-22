@@ -22,7 +22,7 @@ function getSimc() {
 
 	var tier100 = {
 		0: "None100",
-		1: "StSt",
+		1: "ShS",
 		2: "FoE",
 		3: "NM"
 	}

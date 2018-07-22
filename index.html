@@ -5,7 +5,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script type="text/javascript" src="main.js"></script>
   <script type="text/javascript" src="simc-help.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="common.css">
   <link rel="stylesheet" type="text/css" href="main.css">
@@ -35,100 +35,123 @@
 		</div>
 
 		<!--***********Main page, index***********-->
-		<div id="main" class="page flex horizontal-layout padding-15 visible">
+		<div id="main" class="page flex horizontal-layout visible maincontainer-nopowerbi">
 			<i class="fas fa-arrow-left"></i> Click there!
 		</div>
 
 		<!--***********Power-bi-stuff***********-->
-		<div id="powerbi" class="page flex vertical-layout padding-15">
+		<div id="powerbi" class="page flex vertical-layout">
 			<iframe class="flex" src="https://app.powerbi.com/view?r=eyJrIjoiZTQyNWFhNzQtZTEyMS00YzYxLWFmYWUtZTdjMzVmMTQyNzBlIiwidCI6IjBlNWJmM2NmLTFmZjQtNDZiNy05MTc2LTUyYzUzOGMyMmE0ZCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
 			<div id="powerbi-hider"></div>
 		</div>
 
 		<!--***********Simc-tools***********-->
-		<div id="simc" class="page flex vertical-layout padding-15">			
+		<div id="simc" class="page flex vertical-layout maincontainer-nopowerbi">
+			<div class="pagetitle horizontal-layout center-justified">
+				simc tools - balance
+			</div>
 			<div class="horizontal-layout flex">
 				<div class="vertical-layout flex">
-					<span class="bold-text">Talents</span>
-					<div class="horizontal-layout flex">
+					<div class="horizontal-layout center-justified balance-title margin-15">
+						<span>Talents</span>
+					</div>
+					<div class="horizontal-layout padding-15">
 						<div class="flex vertical-layout">
-							<span>Tier 15</span>
-							<div class="horizontal-layout">
+							<span class="subtitle">Tier 15</span>
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="None15" name="None15">
+								<span class="checkmark"></span>
 								<label for="None15">None</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="NB" name="NB">
+								<span class="checkmark"></span>
 								<label for="NB">NB</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="WoE" name="WoE">
+								<span class="checkmark"></span>
 								<label for="WoE">WoE</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="FoN" name="FoN">
+								<span class="checkmark"></span>
 								<label for="FoN">FoN</label>
 							</div>
 						</div>
 						<div class="flex vertical-layout">
-							<span>Tier 75</span>
-							<div class="horizontal-layout">
+							<span class="subtitle">Tier 75</span>
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="None75" name="None75">
+								<span class="checkmark"></span>
 								<label for="None75">None</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="SotF" name="SotF">
+								<span class="checkmark"></span>
 								<label for="SotF">SotF</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="SL" name="SL">
+								<span class="checkmark"></span>
 								<label for="SL">SL</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="Inc" name="Inc">
+								<span class="checkmark"></span>
 								<label for="Inc">Inc</label>
 							</div>
 						</div>
 						<div class="flex vertical-layout">
-							<span>Tier 90</span>
-							<div class="horizontal-layout">
+							<span class="subtitle">Tier 90</span>
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="None90" name="None90">
+								<span class="checkmark"></span>
 								<label for="None90">None</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="SD" name="SD">
+								<span class="checkmark"></span>
 								<label for="SD">SD</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="TM" name="TM">
+								<span class="checkmark"></span>
 								<label for="TM">TM</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="StFl" name="StFl">
+								<span class="checkmark"></span>
 								<label for="StFl">StFl</label>
 							</div>
 						</div>
 						<div class="flex vertical-layout">
-							<span>Tier 100</span>
-							<div class="horizontal-layout">
+							<span class="subtitle">Tier 100</span>
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="None100" name="None100">
+								<span class="checkmark"></span>
 								<label for="None100">None</label>
 							</div>
-							<div class="horizontal-layout">
-								<input type="checkbox" id="StSt" name="StSt">
-								<label for="StSt">StSt</label>
+							<div class="horizontal-layout center">
+								<input type="checkbox" id="ShS" name="ShS">
+								<span class="checkmark"></span>
+								<label for="ShS">ShS</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="FoE" name="FoE">
+								<span class="checkmark"></span>
 								<label for="FoE">FoE</label>
 							</div>
-							<div class="horizontal-layout">
+							<div class="horizontal-layout center">
 								<input type="checkbox" id="NM" name="NM">
+								<span class="checkmark"></span>
 								<label for="NM">NM</label>
 							</div>
 						</div>						
 					</div>
-					<span class="bold-text">Azerite</span>
+					<div class="horizontal-layout center-justified balance-title margin-15">
+						<span>Azerite</span>
+					</div>
 					<div class="horizontal-layout flex">
 					</div>
 					<div class="horizontal-layout end-justified padding-15">
@@ -138,36 +161,10 @@
 				</div>
 				<textarea class="flex-2" id="talents-text" readonly></textarea>
 			</div>
-			<div class="horizontal-layout flex-2">
-				<div class="vertical-layout flex">
-					<div class="vertical-layout flex">
-						<span class="bold-text">Fight parameters</span>
-						<div class="vertical-layout">
-							<div class="horizontal-layout center">
-								<i class="fa"></i>
-								<select>
-									<option value="adds">adds</option>
-									<option value="damage">damage</option>
-									<option value="movement">movement</option>
-								</select>
-								<i class="fas fa-plus"></i>
-							</div>
-							<div class="horizontal-layout">
-								<i class="fas fa-trash"></i>
-							</div>
-						</div>
-					</div>
-					<div class="horizontal-layout end-justified padding-15 v-scroll">
-						<button class="action" onclick="getSimc()">Generate</button>
-						<button class="normal" onclick="copyText('events-text')">Copy text</button>
-					</div>
-				</div>
-				<textarea class="flex-2" id="events-text" readonly></textarea>
-			</div>
 		</div>
 
 		<!--***********About***********-->
-		<div id="about" class="page flex vertical-layout padding-15">
+		<div id="about" class="page flex vertical-layout maincontainer-nopowerbi">
 		</div>
 
 	</div>
