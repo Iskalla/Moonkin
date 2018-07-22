@@ -34,8 +34,23 @@
 		</div>
 
 		<!--***********Main page, index***********-->
-		<div id="main" class="page flex horizontal-layout visible maincontainer-nopowerbi">
-			<i class="fas fa-arrow-left"></i> Click there!
+		<div id="main" class="page flex vertical-layout visible maincontainer-nopowerbi">
+			<div class="pagetitle horizontal-layout center-justified">
+				chickendb
+			</div>
+			<div id="main-introduction" class="flex">
+				<div class="paragraph">Hey all!</div>
+				<div class="paragraph">Iskalla and I have teamed up to create a new way to display, disseminate and document theorycrafting for Boomkin with BFA, and have put in a tremendous amount of effort to bring this in time for the expansion. Essentially, we were unhappy with the traditional methods of theorycrafting, which typically followed the pattern of:</div>
+				<ul>
+					<li>sim all builds,</li>
+					<li>compare top choices,</li>
+					<li>make justifications based on the ordering.</li>
+				</ul>
+				<div class="paragraph">This style of theorycrafting, while correct in most instances, lacked further data analysis and explorative insights. In general this approach works, and the inconsistencies with top builds in WarcraftLogs can be hand-waved as “simulation error” or “sims are junk.” We strongly refute this point, and argue that sims are only as good as the model and assumptions behind it. As such, a large part of this project has been to target these deficiencies, and relax some of the constricting assumptions we have historically clung to.</div>
+				<div class="paragraph">Chickendb is the first major step into data analytics and data aggregation, combined with a shiny front-end with Power BI visuals and interactivity. We’re putting a whole new spin on theorycrafting, and letting the user become the one in charge of what they see. You can explore the results of over 50 separate sims with 95+ profiles per sim, and go straight to the information you need. We’ve cleaned, cut-up and reported the actual insightful items hiding in each sim report, giving you the ability to really see what makes up your DPS and how impactful your decisions really are.</div>
+				<div class="paragraph">We hope you all enjoy this first introduction to chickendb. We are looking for feedback on the analytics, look-and-feel and general usability of the site, so please contact us if you have any suggestions, comments or queries.</div><br><br>
+				<div class="paragraph">Cheers!<br/>Slip and Iska</div>
+			</div>
 		</div>
 
 		<!--***********Power-bi-stuff***********-->
@@ -163,7 +178,35 @@
 		</div>
 
 		<!--***********About***********-->
-		<div id="about" class="page flex vertical-layout maincontainer-nopowerbi">
+		<div id="about" class="page flex vertical-layout">
+			<div class="pagetitle horizontal-layout center-justified">
+				about chickendb
+			</div>
+			<div id="about-content" class="flex vertical-layout v-scroll">
+				<div class="about-subtitle">What is chickendb?</div>
+				<div class="paragraph">Chickendb is our solution to assuaging the hold feelcrafting has on contemporary spec analysis. With our roots deep in data analysis and telling stories with visuals, we have found the levels of hand-waving and weak opinions to be too high. Additionally, the gap between simulations and WarcraftLogs rankings has tended to make sims look inconsistent, inaccurate and inapplicable. The argument usually devoles to ‘ideal world vs. real world,’ implying that sims are too basic to give meaningful results.</div>
+				<div class="paragraph">However, we argue that sims are powerful, and can provide much more than what has been shown. Sims are our most powerful theorycrafting tool, and to simply dismiss them is not only wasteful but criminal. If the sims are wrong, it’s because it hasn’t been written properly, or we have made the wrong assumptions. You put in crap, you get crap. It’s that simple.</div>
+				<div class="paragraph">Chickendb is a way to report and analyse raw sim data, delivering clean, intuitive and interactive visuals for everyone to consume. We provide the data so guide writers can be confident in their analysis and know the data they’re using is the best available. Chickendb aims to be a one-stop-shop for all analytics pertaining to Boomkins, providing the basis for all guides and information needed.</div>
+
+				<div class="about-subtitle">Phases and goals</div>
+				<div class="paragraph">Chickendb is currently in beta -- we have only just created the skeleton, and will be quickly adding new features and tools to the site as we wrap up phase 1. By the end of phase 1, we plan to have the following available at a minimum:</div>
+				<ul>
+					<li>Sim breakdowns by talent, azerite and trinket</li>
+					<li>Analysis by fight length, fight type and target scaling</li>
+					<li>Easy, intuitive navigation</li>
+					<li>Clean and simple UI</li>
+				</ul>
+				<div class="paragraph">We’re currently 85% of the way through phase 1, and will be pushing to have it complete before BFA launches.</div>
+				<div class="paragraph">Phase 2 is still in development, but we will be focusing on chickendb as a data aggregator, and expanding on our inter-spec analysis.</div>
+				<div class="paragraph">Phase 3 of the project will be the transition from Boomkin analytics to general Sim analytics. We plan to integrate all other DPS specs into our analysis, using the same metrics as we’ve proven with Boomkin, in order to provide inter-spec comparisons and data aggregation.</div>
+				<div class="paragraph">We’re excited to share all of this with you, and hope that you will be able to grow and learn with us along the way!</div>
+
+				<div class="about-subtitle">About the authors</div>
+				<div class="paragraph">Chickendb is run by two long-time Boomkin players -- Slippykins and Iskalla.</div>
+				<div class="paragraph"><strong>Slippykins</strong> has played Boomkin since BC, and has been theorycrafting since the end of Wrath. This was back when we used WrathCalcs to do our analysis, written and maintained by Hamlet on the EJ forums. Times have changed a lot since then, notwithstanding the spec itself. Slip has played casual, hardcore and semi-hardcore for most of his raiding experience, with his top achievements during his time with Arathian Knights on US-Cenarius. Since then, he has lived in two countries and finished a Bachelor's degree in Economics and Finance along the way. Slip has a passion for data analytics and econometrics, with proficiency in R, Matlab, Power BI and SQL. Slip currently moderates the Druid forum on MMO-Champion and Dreamgrove, the Druid discord.</div>
+				<div class="paragraph"><strong>Iskalla</strong> has also played Moonkin (she doesn’t like the term Boomkin) since BC, and has raided almost every tier onwards. She started being engaged with the Druid community on Dreamgrove in early 2017, and has contributed to wowanalyzer and Emerald Dreamcatcher theorycrafting. Iskalla is a coder at heart, and loves nothing more than to settle in with a nice Excel spreadsheet at night (this is a lie). She recently moved to Australia, Land of the Spooders, and had to make a new US battle.net account. She doesn't recommend changing regions to anyone.</div>
+				<div class="paragraph">Slippykins and Iskalla met on the Druid discord, and now live together in Melbourne (best city in Australia). You can contact them via Discord: Slippykins#0001 and Iskalla#0001.</div><br><br>
+			</div>
 		</div>
 
 	</div>

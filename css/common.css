@@ -150,3 +150,7 @@ label {
 .margin-15 {
 	margin: 15px;
 }
+.paragraph {
+    font-size: 16px;
+    margin: 15px 0;
+}

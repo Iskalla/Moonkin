@@ -1,27 +1,8 @@
-#top-menu {
-	height: 40px;
-	background-color: #444;
-	color: #eee;
-}
+/*Menu*/
 #left-menu {
 	width: 150px;
 	background-color: #444;
 	color: #eee;
-}
-#bird-icon {
-	font-size: 36px;
-    margin: 5px;
-}
-#about-container {
-    margin: 15px 0;
-    cursor: pointer;
-    font-size: 17px;
-}
-#about-container i {
-    margin: 0 8px;
-}
-#about-container:hover {
-    color: rgb(255, 125, 10);
 }
 #back-to-main {
     font-size: 21px;
@@ -42,18 +23,45 @@
     background-color: #212121;
     color: #fff;
 }
-
 .menu-item i {
     margin: 0 8px;
 }
+#about-container {
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 17px;
+}
+#about-container i {
+    margin: 0 8px;
+}
+#about-container:hover {
+    color: rgb(255, 125, 10);
+}
 
+/*Common for pages*/
 .page {
 	display: none;
 }
 .page.visible {
 	display: inherit;
 }
+.pagetitle {
+    font-size: 54px;
+    color: rgb(71, 74, 74);
+}
+.maincontainer-nopowerbi {
+    padding: 44px 120px;
+}
 
+/*Main page*/
+#main .pagetitle {
+    color: rgb(255, 125, 10);
+}
+#main-introduction {
+    padding: 30px 220px;
+}
+
+/*Analytics page*/
 #powerbi {
 	position: relative;
 }
@@ -64,15 +72,18 @@
     bottom: 0px;
     background-color: #eaeaea;
 }
-.page#about{
-    background-image: url(../images/about.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+/*About page*/
+.page#about .pagetitle{
+    margin-top: 42px;
+    margin-bottom: 20px;
+    color: rgb(255, 125, 10);
 }
-.pagetitle {
-    font-size: 54px;
-    color: rgb(71, 74, 74);
+.about-subtitle {
+    font-size: 23px;
+    margin-top: 20px;
+    color: rgb(255, 125, 10);
 }
-.maincontainer-nopowerbi {
-    padding: 44px 120px;
+#about-content {
+    padding: 0 160px;
 }
