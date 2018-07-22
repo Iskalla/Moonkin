@@ -27,10 +27,15 @@ $(window).on('hashchange', function() {
 
     $('.page').removeClass('visible');
     $('.menu-item').removeClass('selected');
+    $('.submenu-item').removeClass('selected');
+    $('.submenu-item').removeClass('visible');
 
     if (temp) {
         $('.page' + temp).addClass('visible');
         $('.menu-item' + temp + '-mitem').addClass('selected');
+        $('.submenu-item' + temp + '-mitem').addClass('selected');
+        $('.' + temp.replace('#', '') + '-submenu').addClass('visible');
+        $(temp + '-mitem').addClass('visible');
     }
     else {
         $('.page#main' + temp).addClass('visible');

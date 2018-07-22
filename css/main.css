@@ -26,6 +26,22 @@
 .menu-item i {
     margin: 0 8px;
 }
+.submenu-item {
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+.submenu-item i {
+    margin: 0 5px 0 40px;
+}
+.submenu-item:hover, .submenu-item.selected {
+    background-color: #313131;
+    color: #fff;    
+}
+.submenu-item.visible {
+    display: inherit;
+}
 #about-container {
     margin: 15px 0;
     cursor: pointer;
@@ -73,8 +89,17 @@
     background-color: #eaeaea;
 }
 
+/*How to page*/
+.howto-subtitle {
+    font-size: 20px;
+    margin-top: 7px;
+}
+.howtoimg {
+    margin: 10px 0;
+}
+
 /*About page*/
-.page#about .pagetitle{
+.page#about .pagetitle, .page#howto .pagetitle{
     margin-top: 42px;
     margin-bottom: 20px;
     color: rgb(255, 125, 10);
@@ -84,6 +109,6 @@
     margin-top: 20px;
     color: rgb(255, 125, 10);
 }
-#about-content {
+#about-content, #howto-content {
     padding: 0 160px;
 }
