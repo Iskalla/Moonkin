@@ -12,13 +12,26 @@
 	font-size: 36px;
     margin: 5px;
 }
-.about-icon#about {
-	font-size: 21px;
-    margin: 0 11px;
+#about-container {
+    margin: 15px 0;
     cursor: pointer;
+    font-size: 17px;
+}
+#about-container i {
+    margin: 0 8px;
+}
+#about-container:hover {
+    color: rgb(255, 125, 10);
 }
 #back-to-main {
-	cursor: pointer;
+    font-size: 21px;
+    height: 60px;
+}
+.init-title {
+    cursor: pointer;
+}
+.init-title:hover {
+    color: rgb(255, 125, 10);
 }
 .menu-item {
     height: 55px;
@@ -51,8 +64,8 @@
     bottom: 0px;
     background-color: #eaeaea;
 }
-#about{
-	    background-image: url(about.jpg);
+.page#about{
+    background-image: url(../images/about.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }

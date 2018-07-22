@@ -52,6 +52,13 @@ p {
 .center {
 	align-items: center;
 }
+.center-center {
+	align-items: center;
+	justify-content: center;
+}
+.self-end {
+	align-self: end;
+}
 .flex{
 	flex: 1;
 }
