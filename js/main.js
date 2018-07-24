@@ -6,7 +6,7 @@ $( document ).ready(function() {
 });
 
 function navigate(id) {
-    if (id == 'back-to-main') { 
+    if (!id) { 
          history.pushState("", document.title, window.location.pathname + window.location.search);
     }
     else {
@@ -60,12 +60,24 @@ function handleTouchMove(evt) {
     var xDiff = xDown - xUp;
 
     var navArray = ['', 'powerbi-mitem', 'simc-mitem', 'about-mitem']
+    var hash = document.location.hash;
+    var current;
+    for (var i = 0; i < navArray.length; i++) {
+        if ('#' + navArray[i] == hash + '-mitem' || !hash){
+            current = i;
+            break;
+        }
+    }
 
     if ( xDiff > 300 ) {
-        navigate('powerbi-mitem');
-        xDown = null;
+        if (navArray[current+1]) {
+            navigate(navArray[current+1]);
+            xDown = null;
+        }
     } else if ( xDiff < -300 ) {
-        navigate('powerbi-mitem');
-        xDown = null;
+        if (navArray[current-1]) {
+            navigate(navArray[current-1]);
+            xDown = null;
+        }
     }
 };

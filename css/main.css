@@ -33,35 +33,16 @@
 .init-title {
     cursor: pointer;
 }
-.init-title:hover {
-    color: rgb(255, 125, 10);
-}
 .menu-item {
     height: 55px;
     font-size: 6em;
     cursor: pointer;
 }
-.menu-item:hover, .menu-item.selected {
+.menu-item.selected {
     color: rgb(255, 125, 10);
 }
 .menu-item i {
     margin: 0 8px;
-}
-.submenu-item {
-    height: 30px;
-    font-size: 15px;
-    cursor: pointer;
-    display: none;
-}
-.submenu-item i {
-    margin: 0 5px 0 40px;
-}
-.submenu-item:hover, .submenu-item.selected {
-    background-color: #313131;
-    color: #fff;    
-}
-.submenu-item.visible {
-    display: inherit;
 }
 #about-container {
     margin: 15px 0;
@@ -71,8 +52,19 @@
 #about-container i {
     margin: 0 8px;
 }
-#about-container:hover {
-    color: rgb(255, 125, 10);
+.submenu-item {
+    display: none;
+}
+.submenu-item.visible {
+    display: inherit;
+}
+#howto-mitem {
+    position: absolute;
+    font-size: 4vh;
+    right: 20px;
+    color: #444;
+    top: 135px;
+    z-index: 1;
 }
 
 /*Common for pages*/
@@ -88,11 +80,6 @@
 }
 .maincontainer-nopowerbi {
     margin: 50px 50px;
-}
-.wip {
-    font-size: 50px;
-    color: rgb(255, 0, 26);
-    transform: rotate(-45deg);
 }
 
 /*Main page*/
@@ -124,6 +111,9 @@
 .howtoimg {
     margin: 10px 0;
 }
+#mob-howto {
+    display: absolute;
+}
 
 /*Simc tools page*/
 #simc-maincontent {
@@ -147,7 +137,6 @@
 label {
     margin-left: 5px;
     font-size: 2vh;
-    cursor: pointer;
 }
 
 /*About page*/
@@ -162,15 +151,15 @@ label {
     color: rgb(255, 125, 10);
 }
 #about-content, #howto-content {
-    padding: 0 160px;
+    width: 95%;
 }
+
 @media only screen and (min-width: 981px) {
     .maincontainer {
         flex-direction: row;
     }
     .paragraph {
         font-size: 16px;
-        margin: 15px 0;
     }
     .mob-hidden {
         display: inherit;
@@ -192,43 +181,32 @@ label {
         font-size: 16px;
         margin-left: 15px;
     }
+
     /*Menu*/
     #left-menu {
-    	width: 150px;
-    	background-color: #444;
-    	color: #eee;
+        width: 150px;
         flex-direction: column;
         align-items: inherit;
     }
     #back-to-main {
         font-size: 21px;
-        height: 60px;
         flex: inherit;
         justify-content: center;
-    }
-    .init-title {
-        cursor: pointer;
     }
     .init-title:hover {
         color: rgb(255, 125, 10);
     }
     .menu-item {
-        height: 55px;
         font-size: 17px;
-        cursor: pointer;
     }
     .menu-item:hover, .menu-item.selected {
         background-color: #212121;
         color: #fff;
     }
-    .menu-item i {
-        margin: 0 8px;
-    }
     .submenu-item {
         height: 30px;
         font-size: 15px;
         cursor: pointer;
-        display: none;
     }
     .submenu-item i {
         margin: 0 5px 0 40px;
@@ -237,31 +215,21 @@ label {
         background-color: #313131;
         color: #fff;    
     }
-    .submenu-item.visible {
-        display: inherit;
-    }
     #about-container {
-        margin: 15px 0;
-        cursor: pointer;
         font-size: 17px;
-    }
-    #about-container i {
-        margin: 0 8px;
     }
     #about-container:hover {
         color: rgb(255, 125, 10);
     }
+    #howto-mitem {    
+        position: inherit;
+        font-size: inherit;
+        color: #eee;
+    }
 
     /*Common for pages*/
-    .page {
-    	display: none;
-    }
-    .page.visible {
-    	display: inherit;
-    }
     .pagetitle {
         font-size: 54px;
-        color: rgb(71, 74, 74);
     }
     .maincontainer-nopowerbi {
         padding: 44px 120px;
@@ -273,26 +241,14 @@ label {
     }
 
     /*Main page*/
-    #main .pagetitle {
-        color: rgb(255, 125, 10);
-    }
     #main-introduction {
         margin-top: 30px;
     }
 
-    /*Analytics page*/
-    #powerbi {
-    	position: relative;
-    }
-    #powerbi-hider {
-    	width: 100%;
-        height: 37px;
-        position: absolute;
-        bottom: 0px;
-        background-color: #eaeaea;
-    }
-
     /*How to page*/
+    #mob-howto {
+        display: none;
+    }
     .howto-subtitle {
         font-size: 20px;
         margin-top: 7px;
@@ -317,10 +273,8 @@ label {
     }
     .subtitle {
         font-size: 16px;
-        margin-bottom: 5px;
     }
     label {
-        margin-left: 5px;
         font-size: 14px;
         cursor: pointer;
     }
@@ -337,6 +291,7 @@ label {
         color: rgb(255, 125, 10);
     }
     #about-content, #howto-content {
+        width: auto;
         padding: 0 160px;
     }
 }
