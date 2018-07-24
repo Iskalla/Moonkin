@@ -41,3 +41,31 @@ $(window).on('hashchange', function() {
         $('.page#main' + temp).addClass('visible');
     }
 });
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;
+
+function handleTouchStart(evt) {                                         
+    xDown = evt.touches[0].clientX;
+};
+
+function handleTouchMove(evt) {
+    if ( ! xDown) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;
+    var xDiff = xDown - xUp;
+
+    var navArray = ['', 'powerbi-mitem', 'simc-mitem', 'about-mitem']
+
+    if ( xDiff > 300 ) {
+        navigate('powerbi-mitem');
+        xDown = null;
+    } else if ( xDiff < -300 ) {
+        navigate('powerbi-mitem');
+        xDown = null;
+    }
+};
